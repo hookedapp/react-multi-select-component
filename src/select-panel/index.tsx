@@ -182,6 +182,7 @@ const SelectPanel = () => {
             placeholder={t("search")}
             type="text"
             aria-describedby={t("search")}
+            className={t('searchInput') || 'search-input'}
             onChange={handleSearchChange}
             onFocus={handleSearchFocus}
             value={searchText}
