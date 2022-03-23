@@ -28,7 +28,7 @@ const SelectList = ({ options, onClick, skipIndex }: ISelectListProps) => {
 
   return (
     <>
-      {options.map((o: any, i) => {
+      {[...options].splice(0, 100).map((o: any, i) => {
         const tabIndex = i + skipIndex;
 
         return (
