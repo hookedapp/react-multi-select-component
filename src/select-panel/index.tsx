@@ -217,7 +217,7 @@ const SelectPanel = () => {
         {filteredOptions.length ? (
           <SelectList
             skipIndex={skipIndex}
-            options={filteredOptions}
+            options={filteredOptions.splice(0, 100)}
             onClick={(_e, index) => handleItemClicked(index)}
           />
         ) : isCreatable ? (
